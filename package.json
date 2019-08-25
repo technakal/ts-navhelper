@@ -1,0 +1,22 @@
+{
+  "name": "ts-navhelper",
+  "version": "1.0.0",
+  "description": "A helper program for easily consolidating the necessary information to create consistent SharePoint nav links.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technakal/ts-navhelper.git"
+  },
+  "author": "N. Keener",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technakal/ts-navhelper/issues"
+  },
+  "homepage": "https://github.com/technakal/ts-navhelper#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

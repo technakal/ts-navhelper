@@ -1,0 +1,12 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "outDir": "./dist/js",
+    "removeComments": true,
+    "target": "esnext",
+    "watch": true
+  },
+  "files": ["./src/js/index.ts", "./src/js/components/Input.ts", "./src/js/components/FormField.ts"]
+}

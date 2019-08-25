@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:700|Livvic:400,600&display=swap');
+
+$color-main: #593c8f;
+$color-dk: #171738;
+$color-lt: #dccfec;
+$font-fam-main: 'Livvic', sans-serif;
+$font-fam-header: 'Hepta Slab', serif;
+$font-size-base: 16px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-fam-main;
+  font-size: $font-size-base;
+  line-height: $font-size-base * 1.5;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-fam-header;
+}
