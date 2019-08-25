@@ -1,26 +1,21 @@
+import IDomElement from './interfaces/IDomElement';
 import Input from './Input';
+import IFormField from './interfaces/IFormField';
+import Label from './Label';
 
-interface IFormField {
-  label: string;
-  classNames: string;
-  input: Input;
-}
-
-export class FormField implements IFormField {
-  label: string;
-  classNames: string;
+export class FormField implements IFormField, IDomElement {
+  label: Label;
   input: Input;
 
-  constructor(label: string, classNames: strings, input: Input) {
+  constructor(label: Label, input: Input) {
     this.label = label;
-    this.classNames = classNames;
     this.input = input;
   }
 
   render(): string {
     return `
-      <label for="${this.input.id}" class="${this.classNames}">${this.label}</label>
-      ${input.render()}
+      ${this.label.render()}
+      ${this.input.render()}
     `;
   }
 }

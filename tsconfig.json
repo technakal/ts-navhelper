@@ -4,9 +4,10 @@
     "jsx": "react",
     "lib": ["dom", "esnext"],
     "outDir": "./dist/js",
+    "outFile": "./dist/js/index.js",
     "removeComments": true,
+    "rootDir": "src",
     "target": "esnext",
     "watch": true
-  },
-  "files": ["./src/js/index.ts", "./src/js/components/Input.ts", "./src/js/components/FormField.ts"]
+  }
 }

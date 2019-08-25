@@ -1,14 +1,7 @@
-interface IInput {
-  id: string;
-  placeholder: string;
-  value: string;
-  disabled: boolean;
-  onClick();
-  onBlur();
-  render(): string;
-}
+import IDomElement from './interfaces/IDomElement';
+import IInput from './interfaces/IInput';
 
-export default class Input implements IInput {
+export default class Input implements IInput, IDomElement {
   id: string;
   placeholder: string;
   value: string;
@@ -31,6 +24,8 @@ export default class Input implements IInput {
   onBlur(): void {}
 
   render(): string {
-    return `<input type="text" name="${this.id}" id="${this.id}" placeholder="${this.placeholder}" value="${this.value} onClick="${this.onClick}" disabled=${this.disabled} />`;
+    return `
+      <input type="text" name="${this.id}" id="${this.id}" placeholder="${this.placeholder}" value="${this.value} onclick="${this.onClick}" disabled=${this.disabled} />
+    `;
   }
 }
